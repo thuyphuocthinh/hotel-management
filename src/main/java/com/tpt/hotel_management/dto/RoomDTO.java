@@ -1,7 +1,6 @@
 package com.tpt.hotel_management.dto;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
-import com.tpt.hotel_management.entity.Booking;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -22,5 +21,5 @@ public class RoomDTO {
     private BigDecimal roomPrice;
     private String roomPhotoUrl;
     private String roomDescription;
-    private List<Booking> bookings = new ArrayList<>();
+    private List<BookingDTO> bookings = new ArrayList<>();
 }
